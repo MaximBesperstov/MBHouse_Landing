@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600;700;800&family=Oswald:wght@500&family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: #252525;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(img/mainbg.png);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+.hero .container .navigation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .container .navigation .logotype img {
+    width: 100px;
+    height: 100px;
+}
+
+.hero .container .navigation .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+.hero .container .navigation .nav a {
+    margin-left: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero .container .navigation .nav a:hover {
+    border-bottom: 2px solid #fff;
+    margin-left: 60px;
+    width: 10%;
+}
+
+.hero .container .navigation .lang {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .container .navigation .lang p {
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero .container .navigation .lang p:nth-child(1) {
+    font-weight: bold;
+}
+
+.hero .container .main__text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15% 0;
+    /*padding-top: 200px;*/
+}
+
+.hero .container .main__text h1 {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.hero .container .main__text h1 span {
+    font-weight: 800;
+}
+
+.hero .container .main__text .social {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .container .main__text .social img {
+    width: 40px;
+    padding-top: 40px;
+    height: auto;
+    filter: contrast(100%);
+    /* не помню   */
+}
+
+
+.hero .container .bot__nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .container .bot__nav .listnumber {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero .container .bot__nav .listnumber p {
+    padding: 0 20px;
+}
+
+.hero .container .bot__nav .listnumber span {
+    border-bottom: 2px solid #fff;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.hero .container .bot__nav .nextbigbtn {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
+.hero .container .bot__nav .nextbigbtn .textbtn {
+    display: flex;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-size: 20px;
+    color: #fff;
+    border-right: 2px solid #fff;
+}
+
+.hero .container .bot__nav .nextbigbtn .next {
+    display: flex;
+    width: 40%;
+}
+
+.hero .container .bot__nav .nextbigbtn .next {
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* HERO END */
+
+/* PROJECT START */
+.project {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.project .container .title {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.project .container .title::before {
+    content: 'PROJECT';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgba(200, 200, 200, 0.2);
+    z-index: -1;
+    font-weight: bold;
+}
+
+
+.project .container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 60px 0;
+}
+
+.project .container .buttons .btnproject {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 36px;
+    border: 2px solid #fff;
+    background: none;
+}
+
+.project .container .buttons .btnproject p {
+    transform: rotate(90deg);
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.project .container .buttons .btnproject a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project .container .subbuttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.project .container .subbuttons button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 36px;
+    border: 2px solid #fff;
+    background: none;
+    margin-right: 30px;
+    width: 380px;
+    justify-content: center;
+}
+
+.project .container .subbuttons button:nth-child(1) {
+    background-color: #404040;
+}
+
+.project .container .subbuttons button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.project .container .subbuttons button a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.project .container .main__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    justify-content: space-between;
+
+}
+
+.project .container .main__card img {
+    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%);
+
+}
+
+.project .container .main__card .card .name {
+    position: absolute;
+    top: 240px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.project .container .main__card .card img {
+    filter: brightness(40%);
+    border: 1px solid #000;
+}
+
+.project .container .main__card .card img:hover {
+    filter: brightness(100%);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.project .container .main__card .card .space {
+    position: absolute;
+    top: 260px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.project .container .main__card .card .price {
+    position: absolute;
+    top: 280px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+/* PROJECT END */
+
+/* Scheme work start*/
+
+.work {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /*background-image: url(img/workbg.png);
+    background: url(img/workbg.png);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(img/workbg.png);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+
+.work::before {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.work .container .title {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.work .container .title::before {
+    content: 'WORK';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgb(120, 120, 120);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.work .container .main__block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work .container .main__block .block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+}
+
+.work .container .main__block .block .number {
+    font-size: 80px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: rgba(120, 120, 120, 0.4);
+}
+
+.work .container .main__block .block .textnumber {
+    position: absolute;
+    display: flex;
+    width: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Scheme work end*/
+
+
+/* Popular project start*/
+.popular {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.popular .container .title {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.popular .container .title::before {
+    content: 'POPULAR';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgba(58, 58, 58, 0.4);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.popular .container .block__slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.popular .container .block__slider .main__slider .main__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.popular .container .block__slider .main__card .slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popular .container .block__slider .main__card .left,
+.popular .container .block__slider .main__card .right {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.popular .container .block__slider .main__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.popular .container .block__slider .main__card .card {
+    width: 100%;
+}
+
+.popular .container .block__slider .main__card .card .name {
+    position: absolute;
+    top: 240px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.popular .container .block__slider .main__card .card img {
+    filter: brightness(40%);
+    border: 1px solid #000;
+}
+
+.popular .container .block__slider .main__card .card img:hover {
+    filter: brightness(100%);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.popular .container .block__slider .main__card .card .space {
+    position: absolute;
+    top: 220px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.popular .container .block__slider .main__card .card .price {
+    position: absolute;
+    top: 260px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.popular .container .block__slider .dots {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.popular .container .block__slider .dots span {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #404040;
+    margin-right: 10px;
+}
+
+.popular .container .block__slider .dots span:active {
+    background-color: #fff;
+}
+
+/* Popular project end*/
+
+/* About start*/
+.about {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.about .container .title {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #fff;
+    z-index: 2;
+}
+
+.about .container .title::before {
+    content: 'ABOUT';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgba(58, 58, 58, 0.4);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.about .container .about__main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about .container .about__main .about__text {
+    position: relative;
+    color: #fff;
+}
+
+.about .container .about__main .about__img {
+    position: relative;
+    padding-left: 100px;
+}
+
+/* About end*/
+
+/* Advantages start*/
+.advantages {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.advantages .container .title {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.advantages .container .title::before {
+    content: 'ADVANTAGES';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgba(58, 58, 58, 0.4);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.advantages .container .main__adv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 60px 0;
+}
+
+.advantages .container .main__adv .block {
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    /*border: 1px solid #fff;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages .container .main__adv .block img {
+    width: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.advantages .container .main__adv .block .ptitle {
+    font-size: 20px;
+}
+
+.advantages .container .main__adv .block p {
+    font-size: 16px;
+}
+
+/* Advantages end*/
+
+/* contacts start */
+.contacts {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.contacts .container .title {
+    position: relative;
+    padding: 40px 0 60px 60px;
+    color: #fff;
+    z-index: 2;
+}
+
+.contacts .container .title::before {
+    content: 'CONTACTS';
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 60px;
+    color: rgba(58, 58, 58, 0.4);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.contacts .container .main__contacts {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    color: #898989;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.contacts .container .main__contacts .firsttab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+
+.contacts .container .main__contacts .firsttab li {
+    list-style: none;
+    color: #898989;
+}
+
+.contacts .container .main__contacts .firsttab .ofice,
+.contacts .container .main__contacts .secondtab ul {
+    color: #fff;
+}
+
+.contacts .container .main__contacts .secondtab .cons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .container .main__contacts .secondtab .cons input {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #252525;
+    color: #fff;
+}
+
+.contacts .container .main__contacts .secondtab .cons button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #898989;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* contacts end */
+
+/*footer*/
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+footer .footermain .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+footer .footermain .container button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #898989;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .project .container .main__card {
+        flex-wrap: wrap;
+    }
+
+    .project .container .buttons {
+        flex-wrap: wrap;
+    }
+
+    .project .container .buttons .btnproject {
+        margin-top: 20px;
+    }
+
+
+    .popular .container .block__slider .main__card .slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   .popular .container .block__slider .main__card .card .name,
+   .popular .container .block__slider .main__card .card .space,
+   .popular .container .block__slider .main__card .card .price {
+    display: none;
+  
+}
+}
+@media screen and (max-width:700px) {
+
+    .project .container .main__card {
+        justify-content: center;
+    }
+
+
+    .work {
+        height: auto;
+    }
+
+    .work .container .main__block {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    
+
+    .about .container .about__main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .container .about__main .about__img {
+        padding: 0;
+    }
+
+    .advantages .container .main__adv {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .advantages .container .main__adv .block {
+        margin: 20px 0;
+    }
+
+    .contacts .container .main__contacts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contacts .container .main__contacts .firsttab {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contacts .container .main__contacts .firsttab {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contacts .container .main__contacts .map {
+        padding: 20px 0;
+    }
+
+    footer .footermain .container p {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .hero .container .navigation .lang {
+        display: none;
+}
+.hero .container .main__text h1 {
+    font-size: 40px;
+}
+.hero .container .bot__nav .listnumber{
+    display: none;
+}
+.project .container .main__card .card .name,
+.project .container .main__card .card .space,
+.project .container .main__card .card .price {
+    display: none;
+}
+}
+
+
+
+.block__slider {
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    width: 100%;
+    display: none;
+  }
+  
+  .card.active {
+    display: block;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #555;
+  }
+  
